@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<p>
+		<strong><br>Prato principal:&nbsp;<input type="radio"
+			name="pratoPrincipal" value="1" checked="checked">Massa&nbsp;<input
+			type="radio" name="pratoPrincipal" value="2">Carne&nbsp;<input
+			type="radio" name="pratoPrincipal" value="3">Peixe&nbsp;<br>
+		<br>Acompanhamentos:&nbsp;<br>
+		<input type="checkbox" name="acompSalada" id="acompSalada" value="1">Salada&nbsp;<br>
+		<input type="checkbox" name="acompLegumes" id="acompLegumes" value="2">Legumes&nbsp;<br>
+		<input type="checkbox" name="acompFarofa" id="acompFarofa" value="3">Farofa&nbsp;<br>
+		<input type="checkbox" name="acompFritas" id="acompFritas" value="4">Fritas&nbsp;<br>
+		<br>Convênio:&nbsp;<select class="form-control" style="width:20%;" id="convenio" name="convenio">&nbsp;&nbsp;
+				<option value="1">Placomp</option>&nbsp;&nbsp;&nbsp;
+				<option value="2">Abutua</option>&nbsp;&nbsp;&nbsp;
+				<option value="3">Google</option>&nbsp;&nbsp;&nbsp;
+				<option value="4">Prefeitura</option>&nbsp;&nbsp;
+		</select>&nbsp;<br>
+		<br>Observações&nbsp;<br>
+		<textarea rows="3" cols="40" name="observacoes" id="observacoes" ></textarea>&nbsp;<br>
+		<br>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Valor total</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p><span id="valortotal"></span></p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" id="">OK</button>
+		      </div>
+		    </div>
+		
+		  </div>
+		</div>
+		
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="Enviar">Calcular valor</button>
+	</p>
+</body>
+</html>
